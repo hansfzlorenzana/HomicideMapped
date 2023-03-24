@@ -41,8 +41,8 @@
 Compare homicide changes during the COVID era
 </span><br>
 
-<a href="/HomicideMapped/Homicide_Percent_Change_2020.html">Homicide 2020</a>
-<a href="Homicide_Percent_Change_2021.html">Homicide 2021</a>
+<button onclick="window.location.href='/HomicideMapped/Homicide_Percent_Change_2020.html';"> Homicide 2020</button>
+<button onclick="window.location.href='Homicide_Percent_Change_2021.html';"> Homicide 2021</button>
 </span>
 
   <div id="container1" style="position: relative; width: 100%;"></div>
@@ -66,14 +66,14 @@ popupTemplate: function(geo, data) {
             },
 
 popupOnHover: true, // True to show the popup while hovering
-        highlightOnHover: false,
-        highlightBorderColor: 'rgba(250, 15, 160, 0.2)',
-        highlightBorderWidth: 5,
-        highlightBorderOpacity: 1
+highlightOnHover: true,
+highlightBorderColor: 'rgba(250, 15, 160, 0.2)',
+highlightBorderWidth: 5,
+highlightBorderOpacity: 1
 },
 
-        fills: {
-          defaultFill: 'rgba(169, 169, 169, 1)',
+fills: {
+  defaultFill: 'rgba(169, 169, 169, 1)',
 0: 'rgba(255, 255, 255, 1)',
 1: 'rgba(255, 254, 254, 1)',
 2: 'rgba(255, 253, 253, 1)',
