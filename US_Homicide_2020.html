@@ -21,9 +21,9 @@
 </head>
 <body>
   
-  <script src="/HomicideMapped/d3.v3.min.js"></script>
-  <script src="/HomicideMapped/topojson.v1.min.js"></script>
-  <script src="/HomicideMapped/datamaps.world.hires.min.js"></script>
+  <script src="d3.v3.min.js"></script>
+  <script src="topojson.v1.min.js"></script>
+  <script src="datamaps.usa.min.js"></script>
 
 
 <span style="font-size: 16pt; font-family:arial;"><mark><b>A <a href="https://MaximumTruth.Substack.com">MaximumTruth.Substack.com</a> Project</b></mark></span><br>
@@ -39,25 +39,26 @@
 
  <p style="font-size: 10pt; font-family:arial;"></p>
 <span style="font-size: 20pt; font-family:arial;">
-Compare homicide changes during the COVID era
+Compare homicide changes during the COVID era </span>
 </span><br>
 <span style="font-size: 3pt; font-family:arial;">
-  <a href="Homicide_Percent_Change_2020.html"><img src="http://covid19mapped.com/images/World_button_blue.png" height="40" width="160"></a>
-  <a href="/HomicideMapped/US_Homicide_2020.html"><img src="http://covid19mapped.com/images/USA_button_half.png" height="40" width="160"></a>
+  <a href="/HomicideMapped/Homicide_Percent_Change_2020.html"><img src="http://covid19mapped.com/images/World_button_half.png" height="40" width="160"></a>
+  <a href="US_Homicide_2020.html"><img src="http://covid19mapped.com/images/USA_button_blue.png" height="40" width="160"></a>
 </span><br>
-<button class="button-74" role="button" onclick="window.location.href='Homicide_Percent_Change_2020.html';"><b>World Homicide 2020 &#127759;</b></button>
-<button class="button-74" role="button" onclick="window.location.href='/HomicideMapped/Homicide_Percent_Change_2020.html';"> World Homicide 2021 &#127759;</button>
+<button class="button-" role="button" onclick="window.location.href='US_Homicide_2020.html';"> <b>US Homicide 2020 &#127482;&#127480;</b></button>
+<button class="button-74" role="button" onclick="window.location.href='/HomicideMapped/US_Homicide_2021.html';"> US Homicide 2021 &#127482;&#127480;</button>
 
 </span><br>
-<!-- 
-<button onclick="window.location.href='for_bubble_chart.xlsx';" download> DOWNLOAD FILE</button> -->
+
+
+<!-- <button onclick="window.location.href='for_bubble_chart.xlsx';" download> DOWNLOAD FILE</button> -->
 
   <div id="container1" style="position: relative; width: 100%;"></div>
 
      <script>
        //basic map config with custom fills, mercator projection
       var map = new Datamap({
-        scope: 'world',
+        scope: 'usa',
         element: document.getElementById('container1'),
         projection: 'mercator',
         height: 1000,
@@ -73,14 +74,14 @@ popupTemplate: function(geo, data) {
             },
 
 popupOnHover: true, // True to show the popup while hovering
-        highlightOnHover: false,
-        highlightBorderColor: 'rgba(250, 15, 160, 0.2)',
-        highlightBorderWidth: 5,
-        highlightBorderOpacity: 1
+highlightOnHover: false,
+highlightBorderColor: 'rgba(250, 15, 160, 0.2)',
+highlightBorderWidth: 5,
+highlightBorderOpacity: 1
 },
 
-        fills: {
-          defaultFill: 'rgba(169, 169, 169, 1)',
+fills: {
+  defaultFill: 'rgba(169, 169, 169, 1)',
 0: 'rgba(255, 255, 255, 1)',
 1: 'rgba(255, 254, 254, 1)',
 2: 'rgba(255, 253, 253, 1)',
@@ -1108,7 +1109,7 @@ note:'rgba(255, 0, 0, 1)',
         },
         
         data: {
-        ALB: {fillKey: "10000098",numberOfThings: "-9.83%"},AND: {fillKey: "x",numberOfThings: "N/A"},ARE: {fillKey: "103",numberOfThings: "10.26%"},ARG: {fillKey: "39",numberOfThings: "3.94%"},ARM: {fillKey: "61",numberOfThings: "6.08%"},ATG: {fillKey: "500",numberOfThings: "197.51%"},AUS: {fillKey: "10000029",numberOfThings: "-2.92%"},AUT: {fillKey: "100000161",numberOfThings: "-16.07%"},AZE: {fillKey: "204",numberOfThings: "20.35%"},BGR: {fillKey: "100000162",numberOfThings: "-16.25%"},BHS: {fillKey: "100000239",numberOfThings: "-23.89%"},BIH: {fillKey: "30",numberOfThings: "3.01%"},BLZ: {fillKey: "100000253",numberOfThings: "-25.27%"},BOL: {fillKey: "x",numberOfThings: "N/A"},BRA: {fillKey: "62",numberOfThings: "6.17%"},BRB: {fillKey: "100000147",numberOfThings: "-14.69%"},BTN: {fillKey: "450",numberOfThings: "134.88%"},CAN: {fillKey: "90",numberOfThings: "8.98%"},CHE: {fillKey: "14",numberOfThings: "1.43%"},CHL: {fillKey: "222",numberOfThings: "22.24%"},CHN: {fillKey: "10000030",numberOfThings: "-3.04%"},COL: {fillKey: "10000057",numberOfThings: "-5.65%"},CPV: {fillKey: "47",numberOfThings: "4.73%"},CRI: {fillKey: "3",numberOfThings: "0.32%"},CYP: {fillKey: "1000007",numberOfThings: "-0.73%"},CZE: {fillKey: "100000208",numberOfThings: "-20.77%"},DEU: {fillKey: "1000001",numberOfThings: "-0.12%"},DMA: {fillKey: "151",numberOfThings: "15.09%"},DNK: {fillKey: "100000170",numberOfThings: "-16.96%"},DOM: {fillKey: "10000073",numberOfThings: "-7.28%"},DZA: {fillKey: "1000003",numberOfThings: "-0.27%"},ECU: {fillKey: "138",numberOfThings: "13.82%"},ESP: {fillKey: "10000016",numberOfThings: "-1.55%"},EST: {fillKey: "430",numberOfThings: "82.49%"},FIN: {fillKey: "32",numberOfThings: "3.25%"},FJI: {fillKey: "x",numberOfThings: "N/A"},FRA: {fillKey: "19",numberOfThings: "1.87%"},GBR: {fillKey: "100000301",numberOfThings: "-30.07%"},GBR: {fillKey: "100000167",numberOfThings: "-16.67%"},GBR: {fillKey: "10000076",numberOfThings: "-7.62%"},GRC: {fillKey: "5",numberOfThings: "0.48%"},GRD: {fillKey: "100000129",numberOfThings: "-12.9%"},GTM: {fillKey: "100000300",numberOfThings: "-30.01%"},GUY: {fillKey: "149",numberOfThings: "14.89%"},HKG: {fillKey: "10000091",numberOfThings: "-9.08%"},HND: {fillKey: "100000135",numberOfThings: "-13.52%"},HRV: {fillKey: "220",numberOfThings: "21.95%"},HUN: {fillKey: "253",numberOfThings: "25.31%"},IND: {fillKey: "0",numberOfThings: "0%"},IRL: {fillKey: "10000011",numberOfThings: "-1.12%"},ISL: {fillKey: "510",numberOfThings: "396.76%"},ITA: {fillKey: "0",numberOfThings: "0%"},JAM: {fillKey: "10000011",numberOfThings: "-1.1%"},JOR: {fillKey: "50",numberOfThings: "5.03%"},JPN: {fillKey: "1000000",numberOfThings: "-0.01%"},KAZ: {fillKey: "x",numberOfThings: "N/A"},KEN: {fillKey: "153",numberOfThings: "15.33%"},KGZ: {fillKey: "100000205",numberOfThings: "-20.49%"},KNA: {fillKey: "100000172",numberOfThings: "-17.23%"},KOR: {fillKey: "10000054",numberOfThings: "-5.35%"},LBN: {fillKey: "100000294",numberOfThings: "-29.36%"},LCA: {fillKey: "125",numberOfThings: "12.53%"},LIE: {fillKey: "1000003",numberOfThings: "-0.31%"},LTU: {fillKey: "89",numberOfThings: "8.92%"},LUX: {fillKey: "100000510",numberOfThings: "-75.41%"},LVA: {fillKey: "10000057",numberOfThings: "-5.65%"},MAC: {fillKey: "10000014",numberOfThings: "-1.37%"},MAR: {fillKey: "100000278",numberOfThings: "-27.82%"},MDA: {fillKey: "100000230",numberOfThings: "-22.96%"},MEX: {fillKey: "10000013",numberOfThings: "-1.27%"},MLT: {fillKey: "396",numberOfThings: "39.63%"},MNE: {fillKey: "100000217",numberOfThings: "-21.75%"},MNG: {fillKey: "10000059",numberOfThings: "-5.94%"},MUS: {fillKey: "294",numberOfThings: "29.42%"},NAM: {fillKey: "x",numberOfThings: "N/A"},NLD: {fillKey: "10000042",numberOfThings: "-4.17%"},NOR: {fillKey: "98",numberOfThings: "9.85%"},OMN: {fillKey: "100000407",numberOfThings: "-40.7%"},PAK: {fillKey: "21",numberOfThings: "2.09%"},PAN: {fillKey: "101",numberOfThings: "10.09%"},PHL: {fillKey: "x",numberOfThings: "N/A"},POL: {fillKey: "53",numberOfThings: "5.25%"},PRI: {fillKey: "100000105",numberOfThings: "-10.49%"},PRT: {fillKey: "48",numberOfThings: "4.8%"},PRY: {fillKey: "100000142",numberOfThings: "-14.25%"},PSE: {fillKey: "339",numberOfThings: "33.92%"},QAT: {fillKey: "72",numberOfThings: "7.24%"},ROU: {fillKey: "159",numberOfThings: "15.92%"},RUS: {fillKey: "10000045",numberOfThings: "-4.55%"},SGP: {fillKey: "100000173",numberOfThings: "-17.32%"},SRB: {fillKey: "42",numberOfThings: "4.18%"},SUR: {fillKey: "410",numberOfThings: "81.69%"},SVK: {fillKey: "100000172",numberOfThings: "-17.18%"},SVN: {fillKey: "100",numberOfThings: "9.99%"},SWE: {fillKey: "110",numberOfThings: "11.02%"},TJK: {fillKey: "x",numberOfThings: "N/A"},TUN: {fillKey: "10000026",numberOfThings: "-2.61%"},TUR: {fillKey: "33",numberOfThings: "3.31%"},UGA: {fillKey: "10000085",numberOfThings: "-8.51%"},URY: {fillKey: "100000145",numberOfThings: "-14.55%"},USA: {fillKey: "286",numberOfThings: "28.64%"},VUT: {fillKey: "100000450",numberOfThings: "-51.18%"},
+        AK: {fillKey: "100000291",numberOfThings: "-29.12%"},AL: {fillKey: "177",numberOfThings: "17.69%"},AR: {fillKey: "356",numberOfThings: "35.61%"},AZ: {fillKey: "310",numberOfThings: "31%"},CA: {fillKey: "304",numberOfThings: "30.39%"},CO: {fillKey: "278",numberOfThings: "27.8%"},CT: {fillKey: "297",numberOfThings: "29.67%"},DC: {fillKey: "274",numberOfThings: "27.38%"},DE: {fillKey: "484",numberOfThings: "52.45%"},FL: {fillKey: "144",numberOfThings: "14.38%"},GA: {fillKey: "488",numberOfThings: "54.23%"},HI: {fillKey: "81",numberOfThings: "8.12%"},IA: {fillKey: "490",numberOfThings: "56.81%"},ID: {fillKey: "415",numberOfThings: "41.51%"},IL: {fillKey: "340",numberOfThings: "34.04%"},IN: {fillKey: "343",numberOfThings: "34.26%"},KS: {fillKey: "44",numberOfThings: "4.38%"},KY: {fillKey: "398",numberOfThings: "39.8%"},LA: {fillKey: "341",numberOfThings: "34.1%"},MA: {fillKey: "30",numberOfThings: "3.03%"},MD: {fillKey: "1000006",numberOfThings: "-0.63%"},ME: {fillKey: "10000014",numberOfThings: "-1.42%"},MI: {fillKey: "298",numberOfThings: "29.83%"},MN: {fillKey: "478",numberOfThings: "47.77%"},MO: {fillKey: "252",numberOfThings: "25.18%"},MS: {fillKey: "63",numberOfThings: "6.35%"},MT: {fillKey: "501",numberOfThings: "65.91%"},NC: {fillKey: "310",numberOfThings: "30.96%"},ND: {fillKey: "251",numberOfThings: "25.13%"},NE: {fillKey: "480",numberOfThings: "51.13%"},NH: {fillKey: "100000441",numberOfThings: "-64.13%"},NJ: {fillKey: "198",numberOfThings: "19.84%"},NM: {fillKey: "100000123",numberOfThings: "-12.25%"},NV: {fillKey: "236",numberOfThings: "23.58%"},NY: {fillKey: "384",numberOfThings: "38.35%"},OH: {fillKey: "391",numberOfThings: "39.12%"},OK: {fillKey: "74",numberOfThings: "7.42%"},OR: {fillKey: "62",numberOfThings: "6.16%"},PA: {fillKey: "470",numberOfThings: "47.05%"},RI: {fillKey: "189",numberOfThings: "18.93%"},SC: {fillKey: "211",numberOfThings: "21.06%"},SD: {fillKey: "510",numberOfThings: "149.12%"},TN: {fillKey: "269",numberOfThings: "26.95%"},TX: {fillKey: "338",numberOfThings: "33.75%"},UT: {fillKey: "293",numberOfThings: "29.33%"},VA: {fillKey: "159",numberOfThings: "15.86%"},VT: {fillKey: "235",numberOfThings: "23.53%"},WA: {fillKey: "448",numberOfThings: "44.75%"},WI: {fillKey: "498",numberOfThings: "60.92%"},WV: {fillKey: "170",numberOfThings: "17.05%"},WY: {fillKey: "387",numberOfThings: "38.74%"},
         }
       })
      ;

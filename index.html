@@ -17,6 +17,7 @@
         <meta name="twitter:title" content="Homicide Mapped: % change of homicide rates during Covid19">
         <meta name="twitter:description" content="="Homicide Mapped: % change of homicide rates during Covid19">
         <meta name="twitter:image" content="http://maximwebsite.tripod.com/COVIDthumbnail.png">
+        <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   
@@ -40,13 +41,16 @@
 <span style="font-size: 20pt; font-family:arial;">
 Compare homicide changes during the COVID era
 </span><br>
-
-<button onclick="window.location.href='Homicide_Percent_Change_2020.html';"> Homicide 2020</button>
-<button onclick="window.location.href='/HomicideMapped/Homicide_Percent_Change_2021.html';"> Homicide 2021</button>
+<span style="font-size: 3pt; font-family:arial;">
+  <a href="Homicide_Percent_Change_2020.html"><img src="http://covid19mapped.com/images/World_button_blue.png" height="40" width="160"></a>
+  <a href="/HomicideMapped/US_Homicide_2020.html"><img src="http://covid19mapped.com/images/USA_button_half.png" height="40" width="160"></a>
+</span><br>
+<button class="button-74" role="button" onclick="window.location.href='Homicide_Percent_Change_2020.html';"> <b>World Homicide 2020 &#127759;</b></button>
+<button class="button-74" role="button" onclick="window.location.href='/HomicideMapped/Homicide_Percent_Change_2020.html';"> World Homicide 2021 &#127759;</button>
 
 </span><br>
-
-<button onclick="window.location.href='for_bubble_chart.xlsx';" download> DOWNLOAD FILE</button>
+<!-- 
+<button onclick="window.location.href='for_bubble_chart.xlsx';" download> DOWNLOAD FILE</button> -->
 
   <div id="container1" style="position: relative; width: 100%;"></div>
 
